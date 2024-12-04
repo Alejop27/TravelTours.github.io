@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Tours</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="icon" href="favicon_travel_tours.ico" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+<body style="background-color: rgb(255, 255, 255);">
+  <header id="inicio">
+    <div class="logo">
+      <img src="logo_travel_tours.png" alt="Logo de travel tours">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Destinos</a></li>
+        <li><a href="#tours">Tours</a></li>
+        <li><a href="#contactame">Contacto</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+  <video loop="" muted="" autoplay="" crossorigin="anonymous"
+    class="relative hidden md:block h-full w-full object-center object-cover bg-slate-500 video-main-full">
+    <source src="videosbanner.mp4" type="video/mp4" class="">
+  </video>
+  <div class="center-content">
+    <h1 class="titulo">TRAVEL TOURS</h1>
+    <p class="parrafo-titulo">¿Buscas los mejores viajes al mejor precio? ¡Aquí los tenemos!</p>
+  </div>
+  <div class="TOUR" id="tours">
+    <h1 class="tours">TOURS</h1>
+  </div>
+  <div class="container__slider">
+
+    <div class="container">
+      <input type="radio" name="slider" id="item-1" checked>
+      <input type="radio" name="slider" id="item-2">
+      <input type="radio" name="slider" id="item-3">
+
+      <div class="cards">
+        <label class="card" for="item-1" id="selector-1">
+          <img src="magia_turca.jpg">
+        </label>
+        <label class="card" for="item-2" id="selector-2">
+          <img src="tesoros_de_europa.jpg">
+        </label>
+        <label class="card" for="item-3" id="selector-3">
+          <img src="marruecos.jpg">
+        </label>
+
+      </div>
+    </div>
+
+  </div>
+
+  <section id="servicios" class="service-section">
+    <h2>DESTINOS</h2>
+    <div class="services-container">
+      <div class="service-card">
+        <div class="service-icon">
+          <img src="tres_maravillas.jpg" alt="tres_maravillas">
+        </div>
+        <h3>Tres Maravillas</h3>
+        <p>Descubre las maravillas de Londres, Paris y Berlin
+        </p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <img src="viviendo_europa.jpg" alt="viviendo_europa">
+        </div>
+        <h3>Viviendo Europa</h3>
+        <p>Viaja por los dos paises con mas historia como Italia y Francia</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <img src="marruecos.jpg" alt="marruecos">
+        </div>
+        <h3>Marruecos</h3>
+        <p>Disfruta de las influencias culturales bereberes, árabes y europeas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contáctame -->
+  <section id="contactame" class="contact-section">
+    <h2>Contacto</h2>
+    <p>¿Tienes alguna pregunta? ¡Hablemos!</p>
+    <div class="contact-container">
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Enviar</button>
+      </form>
+      <div class="contact-info">
+        <h3>Información de Contacto</h3>
+        <p><i class="fas fa-envelope"></i> reservas@traveltours.com</p>
+        <p><i class="fas fa-phone"></i> +57 300 123 4567</p>
+        <p><i class="fas fa-map-marker-alt"></i> Bucaramanga, Colombia</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>Sobre Nosotros</h3>
+        <p>En Travel Tours nos especializamos en ofrecer experiencias de viaje únicas por todo el mundo. Con años de
+          experiencia, creamos itinerarios personalizados para que explores destinos fascinantes, adaptados a tus gustos
+          y presupuesto. ¡Viaja con nosotros y descubre el mundo!</p>
+      </div>
+      <div class="footer-links">
+        <h3>Enlaces Rápidos</h3>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Destinos</a></li>
+          <li><a href="#tours">Tours</a></li>
+          <li><a href="#contactame">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>Redes Sociales</h3>
+        <ul class="social-icons">
+          <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://wa.me/573152347188" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Travel Tours. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botón hacia arriba -->
+  <a href="#inicio" class="scroll-up-button" title="Volver al inicio">
+    &uarr;
+  </a>
+  
+
+</body>
+
+</html>
